@@ -27,7 +27,7 @@ def parse_pick_change(s: str) -> int:
     return int(s.replace("+", "").replace("−", "-"))
 
 def main() -> None:
-    with open("nba_lottery_odds.csv", "w", newline="") as csvfile:
+    with open("data.csv", "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow([
             "year",
