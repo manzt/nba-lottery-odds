@@ -24,7 +24,7 @@ def _():
 
 @app.cell
 def _(pl):
-    df = pl.read_csv("data.csv").filter(pl.col("year") >= 2015)
+    df = pl.read_csv("data.csv")
     df
     return (df,)
 
